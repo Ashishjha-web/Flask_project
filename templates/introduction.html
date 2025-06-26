@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+  
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+  <div class="container-fluid">
+
+    <a class="navbar-brand d-flex align-items-center" href="#" style="font-weight: bold; font-size:30px; color: darkblue;">
+  <img src="{{ url_for('static', filename='my_port.jpg') }}"  alt="My Pic"
+     style="height: 90px; width: 90px; border-radius: 50%; object-fit: cover; margin-right: 10px;"> Ashish.dev </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto d-flex align-items-center" style="padding-right: 30px;">
+        <a class="nav-link active " aria-current="page" href="{{url_for('introduction')}}" ><button class="btn btn-info" style="width: 200px; height: 60px; border-radius: 50%;">
+        <h4><i class="bi bi-person">Introduction</i></h4>
+</button></a>
+        <a class="nav-link" href="{{url_for('skills')}}"><button class="btn btn-info" style="width: 100px; height: 60px; border-radius: 50%;">
+        <h4><i class="bi bi-person">Skills</i></h4>
+</button>
+</a>
+        <a class="nav-link" href="{{url_for('contactus')}}"><button class="btn btn-info" style="width: 200px; height: 60px; border-radius: 50%;">
+        <h4><i class="bi bi-person">Contact Us</i></h4>
+</button></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section style="padding: 80px 30px; background: linear-gradient(to right, #fceabb,rgb(243, 13, 185)); text-align: center;">
+  <!-- Profile Image -->
+  <div style="margin-bottom: 30px;">
+    <img src="{{ url_for('static', filename='my_port.jpg') }}" 
+         alt="Ashish Jha" 
+         style="width: 250px; height: 250px; object-fit: cover; border-radius: 50%; border: 8px solid darkred; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);">
+  </div>
+
+  <!-- Heading -->
+  <h1 style="font-size: 50px; font-weight: bold;">
+    Hi, I'm <span style="color: darkblue;">Ashish Jha</span>
+  </h1>
+
+<p style="font-size: 20px; margin-top: 15px; font-weight: bold; color:#1a1a1a;">
+  <span id="typed-text" style="color: darkblue; font-family: 'Segoe UI', sans-serif; border-right: 2px solid black; padding-right: 5px;"></span>
+A passionate <b style="color:green ">Full Stack Developer</b> & <b style="color:green">Data Analyst</b><br>
+    turning ideas into real-world web applications and meaningful insights.</p>
+
+  
+  
+  <!-- Description -->
+  <p style="font-size: 18px; max-width: 800px; margin: 20px auto;">
+    I specialize in building responsive and scalable websites using the <b>MERN stack</b> (MongoDB, Express.js, React, Node.js),
+    and I’m also skilled in <b>Python-based data analysis</b> using libraries like Pandas, NumPy, and Matplotlib.
+    I love solving problems, learning new technologies, and helping people bring their ideas to life through code and data.
+  </p>
+
+  <p style="font-size: 18px; max-width: 800px; margin: 10px auto;">
+    Currently pursuing a Diploma in <b>CSE</b>, I aim to contribute to the tech world with innovation, consistency, and creativity.
+  </p>
+
+  <!-- Button -->
+  <a href="#contact">
+    <button class="btn btn-primary mt-4" style="padding: 12px 25px; font-size: 18px; border-radius: 25px;">
+      Contact Me
+    </button>
+  </a>
+</section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+    <footer style="background: linear-gradient(to right, #0f2027, #203a43, #2c5364); color: white; padding: 40px 20px; text-align: center;">
+  
+  <!-- Brand Name -->
+  <h3 style="font-weight: bold; margin-bottom: 10px;">Ashish.dev</h3>
+  <p style="font-size: 16px; margin-bottom: 25px;">Crafting code & data for a better digital world 🌐</p>
+
+  <!-- Social Icons -->
+  <div style="font-size: 15px; margin-bottom: 25px;">
+    <a href="https://github.com" target="_blank" style="color: white; margin: 0 15px;"><i class="bi bi-github"></i></a>
+    <a href="https://linkedin.com" target="_blank" style="color: white; margin: 0 15px;"><i class="bi bi-linkedin">https://www.linkedin.com/in/ashish-jha</i></a><br>
+    <a href="mailto:ashish@example.com" style="color: white; margin: 0 15px;"><i class="bi bi-envelope-fill">ashishjharosera01@gmail.com</i></a><br>
+    <a href="https://twitter.com" target="_blank" style="color: white; margin: 0 15px;"><i class="bi bi-twitter-x">https://x.com/ashishjhacse10</i></a>
+  </div>
+
+  <!-- Legal Links -->
+  <div style="margin-bottom: 20px;">
+    <a href="/terms" style="color: #ccc; margin: 0 10px; font-size: 14px;">Terms & Conditions</a> |
+    <a href="/privacy" style="color: #ccc; margin: 0 10px; font-size: 14px;">Privacy Policy</a>
+  </div>
+
+  <!-- Bottom Note -->
+  <p style="font-size: 14px; color: #ccc;">&copy; 2025 Ashish Jha. All Rights Reserved.</p>
+</footer>
+
+
+</body>
+</html>
